@@ -1,5 +1,7 @@
 # openapi-clj (OpenAPI 3 契約)
 
+[![CI](https://github.com/kotoba-lang/openapi/actions/workflows/ci.yml/badge.svg)](https://github.com/kotoba-lang/openapi/actions/workflows/ci.yml)
+
 Handle **OpenAPI 3 specifications as EDN/Clojure data** in portable Clojure — every
 namespace is `.cljc`, with **zero third-party runtime deps**, so it runs on the JVM,
 ClojureScript, and Clojure-on-WASM hosts (SCI). An API contract is plain data you can
