@@ -1,4 +1,4 @@
-# openapi-clj (OpenAPI 3 契約)
+# kotoba-lang/openapi
 
 [![CI](https://github.com/kotoba-lang/openapi/actions/workflows/ci.yml/badge.svg)](https://github.com/kotoba-lang/openapi/actions/workflows/ci.yml)
 
@@ -8,16 +8,15 @@ ClojureScript, and Clojure-on-WASM hosts (SCI). An API contract is plain data yo
 `assoc`, `diff`, store in Datomic, or generate; the library adds the structural
 validation, JSON conversion, and a pure request builder around it.
 
-Sibling of the other reusable `*-clj` kernels in this org
-([bpmn-clj](https://github.com/com-junkawasaki/bpmn-clj),
-[dmn-clj](https://github.com/com-junkawasaki/dmn-clj)).
+Sibling of the other reusable kotoba-lang contract kernels such as
+[`kotoba-lang/bpmn`](https://github.com/kotoba-lang/bpmn) and
+[`kotoba-lang/dmn`](https://github.com/kotoba-lang/dmn).
 
-## Why a shared library (org placement)
+## Why a shared library
 
-Per the three-org rule, the **reusable** contract model lives in **com-junkawasaki**;
-**public-benefit actor instances** that call concrete APIs live in **etzhayyim**; any
-**business/private deployment** lives in **gftdcojp**. openapi-clj is the dep — it
-carries no domain endpoints and no HTTP engine bindings (those are host-injected ports).
+The reusable OpenAPI contract model lives in `kotoba-lang/openapi`. It carries
+no domain endpoints and no HTTP engine bindings; those remain host-injected
+ports.
 
 ## The model: OpenAPI 3 as EDN (`openapi.model`)
 
@@ -96,5 +95,5 @@ the request builder stays pure.
 ## Test
 
 ```
-clojure -X:test
+clojure -M:test
 ```
