@@ -9,7 +9,7 @@
     4. Returning an error map if a required param is missing
 
   `invoke` delegates the built request to `IHttp/request`."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [openapi.model  :as m]
             [openapi.ports  :as p]))
 

@@ -3,7 +3,7 @@
   problem maps `{:openapi/severity :error|:warn :openapi/code … :openapi/id … :openapi/msg …}`
   so a caller decides how to surface them. `valid?` is true iff there are no
   :error-level problems (warnings are advisory)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [openapi.model :as m]))
 
 (defn- problem [severity code id msg]
