@@ -95,5 +95,5 @@ the request builder stays pure.
 ## Test
 
 ```
-clojure -M:test
+kbb -M:test
 ```
