@@ -1,5 +1,5 @@
 (ns openapi.core-test
-  (:require [clojure.test :refer [deftest is testing run-tests]]
+  (:require [kotoba.test :refer [deftest is testing run-tests]]
             [openapi.model   :as m]
             [openapi.validate :as v]
             [openapi.json    :as j]
